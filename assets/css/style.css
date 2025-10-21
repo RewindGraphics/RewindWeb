@@ -6828,6 +6828,25 @@ body.light {
     margin: 0 auto; /* center paragraphs */
 }
 
+/* 🟣 Override cursor hover color */
+.cursor-inner {
+  background-color: #9B59B6 !important;
+}
+
+.cursor-outer {
+  border-color: #9B59B6 !important;
+}
+
+/* When hovering over elements */
+.cursor-outer.cursor-hover {
+  background-color: #9B59B6 !important;
+  border-color: #9B59B6 !important;
+}
+
+.cursor-inner.cursor-hover {
+  background-color: #9B59B6 !important;
+}
 
 
 /* ====================== [ End Responsive ] ====================== */
+
