@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <!-- Metas -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="keywords" content="HTML5 Template Cinzel Multi-Purpose themeforest" />
+  <meta name="description" content="Cinzel - Multi-Purpose HTML5 Template" />
+  <meta name="author" content="" />
+
+  <!-- Title -->
+  <title>Cinzel - Dark Navbar Page</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/img/favicon.ico" />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Plugins -->
+  <link rel="stylesheet" href="assets/css/plugins.css" />
+
+  <!-- Core Style Css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Inline CSS (scoped only to this navbar) -->
+  <style>
+    /* ======== Dark Navbar (applies only to navbars with .dark-navbar) ======== */
+    .dark-navbar {
+      background-color: #111; /* dark grey */
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 15px 0;
+    }
+
+    .dark-navbar .nav-link {
+      color: #f0f0f0 !important;
+      transition: color 0.3s ease;
+    }
+
+    .dark-navbar .nav-link:hover {
+      color: #aaa !important;
+    }
+
+    .dark-navbar .dropdown-menu {
+      background-color: #333;
+      border: none;
+    }
+
+    .dark-navbar .dropdown-item {
+      color: #f0f0f0;
+    }
+
+    .dark-navbar .dropdown-item:hover {
+      background-color: #444;
+    }
+
+    /* ======== Background + Foreground Image Section ======== */
+    .centered-image-section {
+      min-height: 100vh;
+      background: url('assets/img/akatsuki-pattern.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5vh 0;
+    }
+
+    .centered-image-section .main-image {
+      width: 80%;
+      max-width: 1200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body class="h-main">
+
+  <!-- ==================== Start progress-scroll-button ==================== -->
+  <div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- ==================== End progress-scroll-button ==================== -->
+
+  <!-- ==================== Start cursor ==================== -->
+  <div class="mouse-cursor cursor-outer"></div>
+  <div class="mouse-cursor cursor-inner"></div>
+  <!-- ==================== End cursor ==================== -->
+
+  <!-- ==================== Start Navbar ==================== -->
+  <nav class="navbar navbar-expand-lg dark-navbar">
+    <div class="container-xxl">
+      <a class="navbar-brand" href="#0">
+        <div class="logo">
+          <div class="logo-light">
+            <img src="assets/img/RewindGraphics.png" alt="">
+          </div>
+          <div class="logo-dark">
+            <img src="assets/img/RewindGraphics.png" alt="">
+          </div>
+        </div>
+      </a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Home</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="home-main.html">Home</a></li>
+              <li><a class="dropdown-item" href="home-main.html">Rewind Visuals</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Portfolio</a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-item">
+                <a href="#0">Grid <i class="fas fa-angle-right icon-arrow"></i></a>
+                <ul class="dropdown-side">
+                  <li><a class="dropdown-item" href="portfolio-grid-2col.html">Grid 2 Columns</a></li>
+                  <li><a class="dropdown-item" href="portfolio-grid-3col.html">Grid 3 Columns</a></li>
+                  <li><a class="dropdown-item" href="portfolio-grid-4col.html">Grid 4 Columns</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="pg-contact2.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- ==================== End Navbar ==================== -->
+
+  <main>
+    <div class="vline"></div>
+
+    <!-- ==================== Start Simple Image Section ==================== -->
+    <section class="centered-image-section">
+      <img src="assets/img/akatsuki project.jpg" alt="Main Image" class="main-image">
+    </section>
+    <!-- ==================== End Simple Image Section ==================== -->
+  </main>
+</body>
+</html>
