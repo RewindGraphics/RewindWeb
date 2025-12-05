@@ -11,7 +11,7 @@
   <meta name="author" content="" />
 
   <!-- Title -->
-  <title>Cinzel - Dark Navbar Page</title>
+  <title>Akatsuki Project</title>
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="assets/img/favicon.ico" />
@@ -24,15 +24,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
 
-   <!-- Plugins -->
-    <link rel="stylesheet" href="assets/css/plugins.css" />
+  <!-- Plugins -->
+  <link rel="stylesheet" href="assets/css/plugins.css" />
 
-    <!-- Core Style Css -->
-    <link rel="stylesheet" href="assets/css/stylegraphics.css" />
+  <!-- Core Style Css -->
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <!-- Inline CSS (scoped only to this navbar) -->
   <style>
-    
+    /* ======== Dark Navbar (applies only to navbars with .dark-navbar) ======== */
+    .dark-navbar {
+      background-color: #111; /* dark grey */
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      padding: 15px 0;
+    }
+
+    .dark-navbar .nav-link {
+      color: #f0f0f0 !important;
+      transition: color 0.3s ease;
+    }
+
+    .dark-navbar .nav-link:hover {
+      color: #aaa !important;
+    }
+
+    .dark-navbar .dropdown-menu {
+      background-color: #333;
+      border: none;
+    }
+
+    .dark-navbar .dropdown-item {
+      color: #f0f0f0;
+    }
+
+    .dark-navbar .dropdown-item:hover {
+      background-color: #444;
+    }
 
     /* ======== Background + Foreground Image Section ======== */
     .centered-image-section {
@@ -94,8 +124,8 @@
                         </a>
                         <ul class="dropdown-menu">
                            
-                            <li><a class="dropdown-item" href="home-main.html">Home</a></li>
-                            <li><a class="dropdown-item" href="home-main.html">Rewind Visuals</a></li>
+                            <li><a class="dropdown-item" href="index.html">Home</a></li>
+                            <li><a class="dropdown-item" href="404.html">Rewind Visuals</a></li>
                             <li><a class="dropdown-item" href="home-RewindGraphics.html">Rewind Graphics</a></li>
 
                         </ul>
@@ -143,3 +173,4 @@
   </main>
 </body>
 </html>
+
